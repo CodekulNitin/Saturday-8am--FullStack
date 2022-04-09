@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full shadow-md bg-gray-50">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6 fixed w-full z-10 top-0">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <a class="text-white no-underline hover:text-white hover:no-underline" href="#">
+                    <span class="text-2xl pl-2"><i class="em em-grinning"></i>Navbar</span>
+                </a>
+            </div>
+    
+            <div class="block lg:hidden">
+                <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+    
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                    <li class="mr-3">
+                        <a class="inline-block py-2 px-4 text-white no-underline" href="#">Active</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!--Container-->
+        <div class="container shadow-lg mx-auto bg-white mt-24 md:mt-18">
+    
+        </div>
+    
+        <script>
+            //Javascript to toggle the menu
+            document.getElementById('nav-toggle').onclick = function(){
+                document.getElementById("nav-content").classList.toggle("hidden");
+            }
+        </script>
+      </nav>
+    </div>
+    <div class="container-fluid gap-2  grid md:grid-cols-3 lg:grid-cols-4 mx-3 md:mx-12">
+      <div class=" w-full rounded-lg p-3  h-full bg-indigo-600">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aliquam
+        praesentium. Ipsam impedit laborum porro sint aliquam dignissimos
+        excepturi dolores placeat numquam obcaecati? Officia, perferendis fuga
+        ipsa, repellendus corporis at nobis veritatis aliquid ex necessitatibus,
+        laborum ullam minus voluptas sapiente. Corporis accusamus ipsum atque
+        repudiandae consequatur repellat, natus nam est omnis cumque?
+      </div>
+      <div class="border  rounded-lg p-3 w-full h-full bg-indigo-600">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+        voluptate porro sed obcaecati ullam, vero labore eveniet reiciendis?
+        Delectus quia necessitatibus corporis laborum voluptatum cumque
+        similique blanditiis assumenda repellendus facere doloremque alias unde
+        mollitia voluptate labore quas omnis dolorum porro voluptas accusantium,
+        vel molestiae cum! Fugiat earum vel iusto laboriosam obcaecati. Cumque
+        asperiores mollitia ex vero, debitis quidem minus tempora blanditiis
+        numquam nemo, sunt neque doloribus laudantium accusamus corrupti nam,
+        ratione impedit! Omnis beatae nam quidem nesciunt, rerum incidunt saepe
+        necessitatibus exercitationem eos quisquam, laboriosam quasi excepturi
+        mollitia facere sunt repudiandae ad et deleniti facilis sapiente, fugit
+        recusandae. Aspernatur quam quasi et beatae corrupti, nisi harum?
+        Architecto nobis quibusdam recusandae vitae illo vero quos minus.
+      </div>
+      <div class="border  rounded-lg p-3 w-full h-full bg-indigo-600">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti eum
+        culpa, voluptates nesciunt et rem fugit fuga nostrum cum veniam, amet
+        possimus iure quod laudantium? Optio perferendis voluptatibus, aut illo
+        eos quis vel alias nihil cum tenetur sequi magnam neque velit eaque quos
+        quisquam tempore at inventore ipsum! Itaque reprehenderit accusantium,
+        cum illo, maxime totam magnam libero dolorum rem asperiores quae neque
+        vero nostrum eveniet.
+      </div>
+      <div class="border rounded-lg p-3  w-full h-full bg-indigo-600">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti eum
+        culpa, voluptates nesciunt et rem fugit fuga nostrum cum veniam, amet
+        possimus iure quod laudantium? Optio perferendis voluptatibus, aut illo
+        eos quis vel alias nihil cum tenetur sequi magnam neque velit eaque quos
+        quisquam tempore at inventore ipsum! Itaque reprehenderit accusantium,
+        cum illo, maxime totam magnam libero dolorum rem asperiores quae neque
+        vero nostrum eveniet.
+      </div>
+      <div class="border rounded-lg p-3  w-full h-full bg-indigo-600">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti eum
+        culpa, voluptates nesciunt et rem fugit fuga nostrum cum veniam, amet
+        possimus iure quod laudantium? Optio perferendis voluptatibus, aut illo
+        eos quis vel alias nihil cum tenetur sequi magnam neque velit eaque quos
+        quisquam tempore at inventore ipsum! Itaque reprehenderit accusantium,
+        cum illo, maxime totam magnam libero dolorum rem asperiores quae neque
+        vero nostrum eveniet.
+      </div>
+    </div>
+  </body>
+</html>
