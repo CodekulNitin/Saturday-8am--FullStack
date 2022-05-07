@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+        }
+        #tableData{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <form id="myForm" onsubmit="submitData()">
+        First name: <input id="email" name="fname"><br>
+        Last name: <input id="password" type="text" name="lname"><br><br>
+        <input type="button" onclick="myFunction()" value="Reset form">
+    
+        <div class="flex justify-center">
+            <!-- <button class="px-3 p-1 bg-blue-700 text-white rounded w-32" onclick="submitData(event)">Submit</button> -->
+            <input type="submit" class="px-3 p-1 bg-blue-700 text-white rounded w-32" value="Submit"/>
+
+        </div>
+    </form>
+
+    <div id="tableData" class="grid md:px-32 px-2 mx-12 p-4 shadow  gap-5 md:mx-44 mt-12 border rounded-lg">
+        <table id="tableData">
+            <tr>
+                <th>email</th>
+                <th>password</th>
+            </tr>
+        </table>
+    </div>
+    <script>
+
+
+        function submitData() {
+          //  event.preventDefault()
+
+            let table=document.getElementById('tableData')
+            let row=table.insertRow(0)
+            let emailCell=row.insertCell(0)
+            let passwordCell=row.insertCell(1)
+
+            let email = document.getElementById("email").value
+            let password = document.getElementById("password").value
+            console.log(email);
+            emailCell.innerHTML=email 
+            passwordCell.innerHTML=password
+
+           // document.getElementById("demo").innerHTML = email;
+           // document.getElementById("demo1").innerHTML = password;
+            document.getElementById("tableData").style.display = "block"
+            // var ele = document.getElementsByName('gender');
+            // for (i = 0; i < ele.length; i++) {
+            //     if (ele[i].checked)
+            //         document.getElementById("gender").innerHTML = "" + ele[i].value;
+            // }
+          //  myFunction()
+            return false
+        }
+        function myFunction() {
+            document.getElementById("myForm").reset();
+        }
+
+    </script>
+
+
+</body>
+
+</html>
